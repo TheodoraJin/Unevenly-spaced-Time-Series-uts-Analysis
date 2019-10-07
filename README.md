@@ -14,7 +14,9 @@ Later in 2010, Dan'azumi et.al published the result of hourly rainfall modelling
 Therefore, the contributor performed Locally Estimated Scatterplot Smoothing (Loess) and Generalized Linear Model as analysing tool. 
 
 
-At the very last, 
+
+
+Finally, the de-accumulated rainfall amount within each 1-hour duration from the original dataset were calculated, based on Loess regression. Also, the corresponding 30-minute peak interval have been computed.
 
 
 Limitations:
@@ -23,4 +25,4 @@ Limitations:
 Future work:
 - The contributor should consider split the data into training/ test subset, to see how models behave.
 - Also, predict result of gamma/ GPD distribution should be illustrated.
-- Furthermore, embedded/ anonymous function should be considered, to serve for a large range of input data.
+- Furthermore, embedded/ anonymous function should be considered, to serve for a large range of input data (from .RData, SQL server, etc.) .
