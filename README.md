@@ -6,13 +6,15 @@ It is vague and provides very limited information.
 
 The .R file contains visualisation and predictions.
 
-Gamma distribution was considered to be an appropriate approach to model rainfall (Aksoy, 1998).
-Later in 2010, Dan'azumi et.al published the result of hourly rainfall modelling in Malaysia.
+In 1998, Aksoy published that Gamma distribution was considered to be an appropriate approach to model rainfall. (Use Gamma Distribution in Hydrology Analysis)
+Later in 2010, Dan'azumi et.al published the result of hourly rainfall modelling in Malaysia. An Generalised Pareto distribution was found to be the most suitable model particularly for Malaysia. 
 
 
 
 
-(Use Gamma Distribution in Hydrology Analysis
 
 
 At the very last, 
+
+
+Limitations
