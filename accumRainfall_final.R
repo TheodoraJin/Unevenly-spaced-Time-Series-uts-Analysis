@@ -19,13 +19,16 @@ time.vec <- format(as.POSIXct(x$unixdatetime[1] + c(0:60) * 60 - 3600,
                               origin = "1970-01-01 ", tz = "EST"), "%H:%M")
 date.vec <- as.Date(as.POSIXct(x$unixdatetime, origin = "1970-01-01 ", tz = "EST")) 
 
-season <- as.factor(quarter(paste(as.POSIXct(x$unixdatetime, origin = "1970-01-01 ", tz = "EST")), 
-                            fiscal_start = 3))
-quarter(as.POSIXct(x$unixdatetime, origin = "1970-01-01 ", tz = "EST"), 
-        fiscal_start = 3)
+
+##### visualisation of original data set
 
 
-
+plot(date.vec, x$value,  type = 'o', 
+     main = 'Pennsylvania 2016 Accumulated Rainfall Amount (18:00 -- 19:00 pm)',
+     sub = 'from 07 Jan 2016 to 09 Aug 2016',
+     xlab = 'Time', ylab = 'Rainfall (inch)', pch = 16, col = "orange")
+legend('topleft', legend = c('Trend line', 'Observed'), 
+       col = c('orange', 'orange'), pch = c(NA, 16), lty = c(1111, NA))
 
 
 
