@@ -267,7 +267,10 @@ df.nonmis = df.nonmis %>% mutate(cum = cumsum(value))
 smooth.cum = loess(cum ~ time, data = df.nonmis)
 
 # plot.
-plot(df.nonmis$bin, df.nonmis$cum, type = 'o', col = 'orange')
+plot(df.nonmis$bin, df.nonmis$cum, type = 'p', 
+     main = 'Cumulative Rainfall in PA, 2016.',
+     sub ='by Stineman interpolation',
+     xlab = 'Time', ylab = 'Cumulative Rainfall (inch)',  col = "orange")
 lines(smooth.cum$fitted, type = 'l', col = 'skyblue')
 
 
