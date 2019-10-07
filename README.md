@@ -18,7 +18,7 @@ Therefore, the contributor performed Locally Estimated Scatterplot Smoothing (Lo
 
 - First, the data set has been resaved as a real .csv file before imported into R.
 - Plotting rainfall amount against date to visualise the trend line within the supplied range.
-- Fit glm with family = gamma and gpd, plotting the fitted value on the original plot to see the behave of the model.
+- Fit glm with family = gamma and gpd respectively, plotting fitted values and trend on the original plot to see their behaves. 
 
 - Then, as mentioned, the original data set was unevenly spaced (2016-01-07, 2016-01-08, 2016-01-09, 2016-01-13, 2016-01-14, etc.). Thus a Stineman interpolation has been applied to compute the missing data.
 - Fit Loess regression and GLMs with the interpolated data set, plotting the smoothed curves and compare their behavious.
