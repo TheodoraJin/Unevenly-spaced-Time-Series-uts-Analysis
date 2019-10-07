@@ -1,8 +1,8 @@
 # Unevenly-spaced-Time-Series-uts-Analysis
 Short analyses of an Unevenly-spaced Time Series (UTS) in Pennsylvania, USA, from 07 Jan 2016 to 09 Aug 2016.
 
-The .csv file contains 91 Unix timestamp and corresponding accumulated rainfall (inch) in 1 hour duration. 
-It is vague and provides very limited information.
+The accumRainfall.csv file contains 91 Unix timestamp and corresponding accumulated rainfall (inch) in 1 hour duration. 
+It is vague with very limited information provided, and is actually a Unicode Text (.txt) file.
 
 
 
@@ -14,12 +14,20 @@ Later in 2010, Dan'azumi et.al published the result of hourly rainfall modelling
 Therefore, the contributor performed Locally Estimated Scatterplot Smoothing (Loess) and Generalized Linear Model as analysing tool. 
 
 
+Process:
+
+- First, the data set has been resaved as a real .csv file before imported into R.
+- Plotting rainfall amount against date to visualise the trend line within the supplied range.
+- Fit glm with family = gamma and gpd, plotting the fitted value on the original plot to see the behave of the model.
+
+- Then, as mentioned, the original data set was unevenly spaced (2016-01-07, 2016-01-08, 2016-01-09, 2016-01-13, 2016-01-14, etc.). Thus a Stineman interpolation has been applied to compute the missing data.
+- Fit Loess regression and GLMs with the interpolated data set, plotting the smoothed curves and compare their behavious.
 
 
-Finally, the de-accumulated rainfall amount within each 1-hour duration from the original dataset were calculated, based on Loess regression. Also, the corresponding 30-minute peak interval have been computed.
+- Finally, the de-accumulated rainfall amount within each 1-hour duration from the original dataset were calculated, based on Loess regression. Also, the corresponding 30-minute peak interval have been computed.
 
 
-Limitations:
+# Limitations:
 
 
 Future work:
