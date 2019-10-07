@@ -9,6 +9,7 @@ It is vague with very limited information provided, and is actually a Unicode Te
 The .R file contains visualisation and predictions.
 
 In 1998, Aksoy published that Gamma distribution was considered to be an appropriate approach to model rainfall. (*Use Gamma Distribution in Hydrology Analysis*)
+
 Later in 2010, *Dan'azumi et al.* published the result of hourly rainfall modelling in Malaysia. An Generalised Pareto distribution was found to be the most suitable model particularly for Malaysia. (*Modelling the Distribution of Rainfall Intensity using Hourly Data*)
 
 Therefore, the contributor performed Locally Estimated Scatterplot Smoothing (Loess) and Generalized Linear Model as analysing tool. 
