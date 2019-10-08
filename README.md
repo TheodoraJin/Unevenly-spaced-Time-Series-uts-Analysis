@@ -40,15 +40,16 @@ Therefore, the contributor performed Locally Estimated Scatterplot Smoothing (Lo
 - PA belongs to SCS Type II curve.
 
 - To define the coefficient of the IDF curve, Requires Duration of the storm and return period.
-i = a/(t+b)^c, i is the rainfall intensity (inch/hrs)
+i = a/(t+b)<sup>c</sup>, i is the rainfall intensity (inch/hrs)
 1. SCS method
 2. Triangular Hyyetograph Method
 3. Alternating block method
 
-- To identify *the range of peak rate* Q_peak, requires Drainage area, Runoff CN, Time of concentration. Modefied 1-hrs CN = 92.6 instead 24-hrs standard NRCS CN = 74.
+- To identify *the range of peak rate* Q<sub>peak</sub>, requires Drainage area, Runoff CN, Time of concentration. Modefied 1-hrs CN = 92.6 instead 24-hrs standard NRCS CN = 74.
 
 
 Assumptions:
+
 Limitations:
 
 
