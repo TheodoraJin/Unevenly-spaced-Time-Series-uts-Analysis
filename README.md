@@ -45,7 +45,7 @@ i = a/(t+b)^c, i is the rainfall intensity (inch/hrs)
 2. Triangular Hyyetograph Method
 3. Alternating block method
 
-- To identify *the range of peak rate*, requires Drainage area, Runoff CN, Time of concentration.
+- To identify *the range of peak rate* Q_peak, requires Drainage area, Runoff CN, Time of concentration. Modefied 1-hrs CN = 92.6 instead 24-hrs standard NRCS CN = 74.
 
 
 Assumptions:
