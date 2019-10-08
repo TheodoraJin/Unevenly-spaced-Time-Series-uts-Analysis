@@ -30,7 +30,7 @@ Therefore, the contributor performed Locally Estimated Scatterplot Smoothing (Lo
 
 
 
-Note:
+# Note:
 - If observation numbers are large enough, maximum rainfall has a Gumbel distribution.
 - PA belongs to SCS Type II curve.
 
