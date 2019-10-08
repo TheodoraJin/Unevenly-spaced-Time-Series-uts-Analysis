@@ -30,7 +30,7 @@ The peak_interval_rgamma_rgpd.R file generates 60 random rainfall numbers for ea
 - Finally, the de-accumulated rainfall amount within each 1-hour duration from the original dataset were calculated, based on Loess regression. Also, the corresponding 30-minute peak interval have been computed.
 
 # Future work:
-- []The contributor should consider split the data into training/ test subset, to see how models behave.
+-[ ] The contributor should consider split the data into training/ test subset, to see how models behave.
 - [x] Also, predict result of gamma/ GPD distribution should be illustrated.
 - [] In 2015, *Hanum et al.* published the method of *Modelling Extreme Rainfall with Gamma-Pareto Distribution.*
 - [] Furthermore, embedded/ anonymous function should be considered, to serve for a large range of input data (from .RData, SQL server, etc.) .
