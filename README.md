@@ -27,22 +27,29 @@ Therefore, the contributor performed Locally Estimated Scatterplot Smoothing (Lo
 
 - Finally, the de-accumulated rainfall amount within each 1-hour duration from the original dataset were calculated, based on Loess regression. Also, the corresponding 30-minute peak interval have been computed.
 
-
-
-
-# Note:
-- If observation numbers are large enough, maximum rainfall has a Gumbel distribution.
-- PA belongs to SCS Type II curve.
-
-Assumptions:
-- Requires Duration of the storm and return period.
-
-
-Limitations:
-
-
 # Future work:
 - The contributor should consider split the data into training/ test subset, to see how models behave.
 - Also, predict result of gamma/ GPD distribution should be illustrated.
 - In 2015, *Hanum et al.* published the method of *Modelling Extreme Rainfall with Gamma-Pareto Distribution.*
 - Furthermore, embedded/ anonymous function should be considered, to serve for a large range of input data (from .RData, SQL server, etc.) .
+
+
+# Note: 
+(Basic hydrology knowledge for the contributor)
+- If observation numbers are large enough, maximum rainfall has a Gumbel distribution.
+- PA belongs to SCS Type II curve.
+
+- To define the coefficient of the IDF curve, Requires Duration of the storm and return period.
+i = a/(t+b)^c, i is the rainfall intensity (inch/hrs)
+1. SCS method
+2. Triangular Hyyetograph Method
+3. Alternating block method
+
+- To identify *the range of peak rate*, requires Drainage area, Runoff CN, Time of concentration.
+
+
+Assumptions:
+Limitations:
+
+
+
