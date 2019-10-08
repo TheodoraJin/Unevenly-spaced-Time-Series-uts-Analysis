@@ -14,6 +14,8 @@ Later in 2010, *Dan'azumi et al.* published the result of hourly rainfall modell
 
 Therefore, the contributor performed Locally Estimated Scatterplot Smoothing (Loess) and Generalized Linear Model as analysing tool. 
 
+The peak_interval_rgamma_rgpd.R file generates 60 random rainfall numbers for each different day, assuming the underlying distribution is Gamma/GPD respectively. The crucial assumption is *minute rainfall amounts are iid*, which could be easily violated!
+- The peak 30-min interval is 18:00--18:30 for gamma, and 18:01--18:31 for GPD.
 
 # Process:
 
@@ -28,10 +30,10 @@ Therefore, the contributor performed Locally Estimated Scatterplot Smoothing (Lo
 - Finally, the de-accumulated rainfall amount within each 1-hour duration from the original dataset were calculated, based on Loess regression. Also, the corresponding 30-minute peak interval have been computed.
 
 # Future work:
-- The contributor should consider split the data into training/ test subset, to see how models behave.
-- Also, predict result of gamma/ GPD distribution should be illustrated.
-- In 2015, *Hanum et al.* published the method of *Modelling Extreme Rainfall with Gamma-Pareto Distribution.*
-- Furthermore, embedded/ anonymous function should be considered, to serve for a large range of input data (from .RData, SQL server, etc.) .
+- []The contributor should consider split the data into training/ test subset, to see how models behave.
+- [x] Also, predict result of gamma/ GPD distribution should be illustrated.
+- [] In 2015, *Hanum et al.* published the method of *Modelling Extreme Rainfall with Gamma-Pareto Distribution.*
+- [] Furthermore, embedded/ anonymous function should be considered, to serve for a large range of input data (from .RData, SQL server, etc.) .
 
 
 # Note: 
