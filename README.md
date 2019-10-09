@@ -15,7 +15,7 @@ Later in 2010, *Dan'azumi et al.* published the result of hourly rainfall modell
 Therefore, the contributor performed Locally Estimated Scatterplot Smoothing (Loess) and Generalized Linear Model as analysing tool. 
 
 The `peak_interval_rgamma_rgpd.R` file generates 60 random rainfall numbers for each different day, assuming the underlying distribution is Gamma/GPD respectively. The crucial assumption is *minute rainfall amounts are iid*, which could be easily violated!
-- The peak 30-min interval is 18:00--18:30 for gamma, and 18:01--18:31 for GPD.
+- The hourly peak 30-min interval between 18:00 to 19:00pm is 18:00--18:30pm for gamma, and 18:01--18:31pm for GPD.
 
 # Process:
 
@@ -49,8 +49,6 @@ i = a/(t+b)<sup>c</sup>, i is the rainfall intensity (inch/hrs)
 
 - To identify *the range of peak rate* Q<sub>peak</sub>, requires Drainage area, Runoff CN, Time of concentration. Modefied 1-hrs CN = 92.6 instead 24-hrs standard NRCS CN = 74.
 
-
-Assumptions:
 
 Limitations:
 
