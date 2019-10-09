@@ -6,16 +6,16 @@ It is vague with very limited information provided, and is actually a Unicode Te
 
 
 
-The `.R` file contains visualisation and predictions.
+The `accumRainfall.R` file contains visualisation and predictions.
 
 In 1998, Aksoy published that Gamma distribution was considered to be an appropriate approach to model rainfall. (*Use Gamma Distribution in Hydrology Analysis*)
 
 Later in 2010, *Dan'azumi et al.* published the result of hourly rainfall modelling in Malaysia. An Generalised Pareto distribution was found to be the most suitable model particularly for Malaysia. (*Modelling the Distribution of Rainfall Intensity using Hourly Data*)
 
-Therefore, the contributor performed Locally Estimated Scatterplot Smoothing (Loess) and Generalized Linear Model as analysing tool. 
+Therefore, the contributor performed Locally Estimated Scatterplot Smoothing (Loess) and Generalized Linear Model (GLM) as analysing tools. 
 
 The `peak_interval_rgamma_rgpd.R` file generates 60 random rainfall numbers for each different day, assuming the underlying distribution is Gamma/GPD respectively. The crucial assumption is *minute rainfall amounts are iid*, which could be easily violated!
-- The hourly peak 30-min interval between 18:00 to 19:00pm is 18:00--18:30pm for gamma, and 18:01--18:31pm for GPD.
+- This function always returns hourly peak 30-min interval solution as 18:00--18:30pm for Gamma distribution, and 18:01--18:31pm for GPD. (Because the density function were pre-defined!)
 
 # Process:
 
