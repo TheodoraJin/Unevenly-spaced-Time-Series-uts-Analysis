@@ -35,6 +35,7 @@ The `peak_interval_rgamma_rgpd.R` file generates 60 random rainfall numbers for 
 - [ ] In 2015, *Hanum et al.* published the method of *Modelling Extreme Rainfall with Gamma-Pareto Distribution.*
 - [ ] Furthermore, embedded/ anonymous function should be considered, to serve for a large range of input data (from .RData, SQL server, etc.) .
 - [ ] Using Gumbel distribution to find peak value.
+- [ ] Detect autocorrelation for the model.
 
 # Note: 
 (Basic hydrology knowledge for the contributor)
